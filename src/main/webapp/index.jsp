@@ -21,6 +21,5 @@
 		<li><a href="${pageContext.request.contextPath}/emp/search2">/emp/search2</a></li>
 		<li><a href="${pageContext.request.contextPath}/emp/search3">/emp/search3</a></li>
 	</ul>
-	
 </body>
 </html>

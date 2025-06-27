@@ -15,7 +15,6 @@ import javax.servlet.annotation.WebFilter;
  */
 @WebFilter("/*")
 public class EncodingFilter implements Filter {
-
 	/**
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
