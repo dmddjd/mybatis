@@ -17,12 +17,10 @@ public class StudentDaoImpl implements StudentDao {
 	public int insertStudentMap(SqlSession session, Map<String, Object> param) {
 		return session.insert("student.insertStudentMap", param);
 	}
-
 	@Override
 	public int selectStudentCount(SqlSession session) {
 		return session.selectOne("student.selectStudentCount");
 	}
-
 	@Override
 	public Student selectOneStudent(SqlSession session, int no) {
 		return session.selectOne("student.selectOneStudent", no);

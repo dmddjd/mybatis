@@ -33,7 +33,6 @@ public class insertMapStudentController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String name = request.getParameter("name");
 		String tel = request.getParameter("tel");
-		
 		Map<String, Object> param = new HashMap<>();
 		param.put("name", name);
 		param.put("tel", tel);

@@ -28,7 +28,8 @@ table#tbl-student tr:last-of-type td{text-align:center;}
 <body>
 	<div class="enroll-container">
 		<h2>회원등록(VO)</h2>
-		<form method="post" action="${pageContext.request.contextPath}/student/insertStudent">
+		<form method="post" action="${pageContext.request.contextPath}
+		/student/insertStudent">
 			<table id="tbl-student">
 				<tr>
 					<th>학생이름</th>
@@ -75,6 +76,5 @@ table#tbl-student tr:last-of-type td{text-align:center;}
 			</table>
 		</form>
 	</div>
-
 </body>
 </html>

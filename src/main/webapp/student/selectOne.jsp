@@ -40,8 +40,6 @@ table.tbl-student tr:last-of-type td:first-child{text-align:center;}
 			</table>
 		</form>
 		
-		<hr />
-		
 		<c:if test="${not empty student}">
 		<h1>학생 정보 수정</h1>
 		<form 
@@ -76,7 +74,11 @@ table.tbl-student tr:last-of-type td:first-child{text-align:center;}
 			</table>
 		</c:if>
 		</form>
-		<form method="POST" name="studentDelFrm" action="${pageContext.request.contextPath}/student/deleteStudent">
+		<form
+		 	name="studentDelFrm"
+		 	action="${pageContext.request.contextPath}/student/deleteStudent"
+		 	method="POST">
+			
 			<input type="hidden" name="no" value="" />			
 		</form>
 		<script>
@@ -110,8 +112,6 @@ table.tbl-student tr:last-of-type td:first-child{text-align:center;}
 		// 학생번호와 일치하는 학생 한명을 비동기 방식으로 조회하여 
 		// 학생번호, 이름 , 전화번호 , 등록일정보를 .tbl-student내부에 추가할 것
 		</script>
-		
-		
 	</div>
 </body>
 </html>

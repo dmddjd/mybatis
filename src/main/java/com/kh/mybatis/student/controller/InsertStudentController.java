@@ -20,8 +20,6 @@ public class InsertStudentController extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.getRequestDispatcher("/student/insertStudent.jsp").forward(req, resp);
-		
-		
 	}
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -48,10 +46,5 @@ public class InsertStudentController extends HttpServlet{
 			req.getSession().setAttribute("msg", "학생 등록 실패 =^모^=ㅗ");
 			resp.sendRedirect(req.getContextPath()+"/student/insertStudent");
 		}
-		
-		
-		
-		
-		
 	}
 }
