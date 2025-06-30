@@ -33,6 +33,6 @@ public class UpdateStudentController extends HttpServlet {
 		}else {
 			request.getSession().setAttribute("msg","회원정보 수정 성공.");
 		}
-		response.sendRedirect(request.getContextPath()+"student/selectOne");
+		response.sendRedirect(request.getContextPath()+"/student/selectOne");
 	}
 }
